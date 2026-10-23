@@ -1,6 +1,6 @@
 {
-  "name": "Fitness Tracker",
-  "short_name": "Fitness",
+  "name": "Daily 1000",
+  "short_name": "Daily 1000",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#0f172a",
