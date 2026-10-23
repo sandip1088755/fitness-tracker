@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f172a">
+  <title>Fitness Tracker</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Fitness Tracker</h1></header>
+
+  <section class="stats">
+    <div class="card"><span id="todayCount">0</span><small>Today</small></div>
+    <div class="card"><span id="weekCount">0</span><small>This week</small></div>
+    <div class="card"><span id="totalMin">0</span><small>Total min</small></div>
+  </section>
+
+  <form id="workoutForm">
+    <select id="type">
+      <option>Running</option>
+      <option>Walking</option>
+      <option>Cycling</option>
+      <option>Gym</option>
+      <option>Yoga</option>
+      <option>Other</option>
+    </select>
+    <input id="duration" type="number" min="1" placeholder="Minutes" required>
+    <input id="notes" type="text" placeholder="Notes (optional)">
+    <button type="submit">Add workout</button>
+  </form>
+
+  <ul id="list"></ul>
+
+  <script src="app.js"></script>
+</body>
+</html>
